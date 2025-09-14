@@ -1,40 +1,43 @@
 # Personal-Budget-Tracker-Project
 Personal Budget Tracker is a comprehensive tool for managing income, expenses, budgets, and spending habits. It supports individual and group expense tracking with CRUD operations, category-based budgeting, real-time spending alerts, data visualizations, secure storage, and optional user authentication and syncing.
 
-Features :
+## Features
 
-Transaction Management:
+- **Authentication**: JWT login/signup
+- **Groups**: Organize shared expenses, add group members
+- **CRUD**: Transactions, groups, budgets
+- **Budgets**: Per-user and per-group, with visual usage
+- **Data Visualization**: Chart.js for summaries, group balances, budget tracking
+- **Backend**: Node.js, Express, SQLite, Sequelize
+- **Frontend**: React.js, Chart.js
+- **Version Control**: Git + GitHub
 
-Add, edit, delete, and filter income and expense entries by date, category, and type.
+## Getting Started
 
-Budget Setting:
+### Backend
+```bash
+cd backend
+npm install
+node server.js
+```
 
-Define monthly budgets for categories such as food, transport, and entertainment with real-time spending alerts.
+### Frontend
+```bash
+cd frontend
+npm install
+npm start
+```
 
-Data Visualization:
+## Deployment
 
-Interactive bar graphs, pie charts, and trend lines for income vs expense, category spending, and budget usage.
+- **Frontend**: Netlify, Vercel
+- **Backend**: Render, Railway, etc.
 
-Financial Summaries: 
+## API
 
-Monthly reports showing savings, overspending alerts, and percentage breakdowns to promote smart money habits.
-
-Group Expense Management: 
-
-Create groups, manage participants and shared expenses with customizable split options, automatic balance calculations, and settlement tracking.
-
-Secure Storage:
-
-Use an optimized database with efficient CRUD operations, optional data encryption, and backup/export (CSV/JSON).
-
-Authentication :
-
-Basic login/logout for personalized budget saving across sessions, with data syncing options.
+- `POST /api/login` / `POST /api/signup` — Auth
+- `GET/POST /api/groups` — Group management
+- `GET/POST /api/transactions` — Expense CRUD
+- `GET/POST /api/budgets/user` / `/api/budgets/group` — Budget setting
 
 
-
-Authentication: Firebase Auth / JWT / Session-based (optional)
-
-Hosting: Netlify / Render / Vercel (optional)
-
-Version Control: Git + GitHub
